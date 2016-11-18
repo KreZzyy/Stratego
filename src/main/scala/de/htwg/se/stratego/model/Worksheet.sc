@@ -16,13 +16,12 @@ object worksheet {
   case class Piece(rank: Int) {
 
   }
+  type Arr10= Array.ofDim[Square](10,10)
+  case class Board(squares: Array[Array[Square]]) {
 
-  case class Board(squares: Array.ofDim[Square](10, 10)) {
-    var arr = Array.ofDim[Square](10, 10)
 
-
-    override def toString() {
-      var sb = new StringBuilder()
+    def toString() {
+      val sb = new StringBuilder()
       val vert = "|---"
       sb.append(vert * 10).append("|\n|")
       var i = 0
@@ -39,7 +38,7 @@ object worksheet {
           break
         }
       }
-      return sb.toString()
+      sb.toString()
     }
 
   }
