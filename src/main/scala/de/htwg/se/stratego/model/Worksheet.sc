@@ -34,9 +34,15 @@ object worksheet {
       while (j < 10) {
         sb.append(squares(i)(j).getPiece().getRank()).append('|')
         i += 1
-        if (i == 10) {
+        if (i == 10 && j < 9) {
           j += 1
           sb.append("\n").append(vert * 10).append("|\n|")
+
+          i = 0
+        }
+        if ( i == 10 && j == 9){
+          j += 1
+          sb.append("\n").append(vert * 10).append("|\n")
           i = 0
         }
       }
