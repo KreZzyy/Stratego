@@ -10,6 +10,7 @@ package stratego
 case class Piece(rank: Int) {
   /**
     * Returns the rank.
+    *
     * @return int, the rank
     */
   def getRank(): Int = {

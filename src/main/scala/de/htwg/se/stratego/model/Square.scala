@@ -1,6 +1,5 @@
 package stratego
 
-import scala.runtime.Nothing$
 
 /** Creates Data Objects to simulate Squares on a gameBoard.
   * Created by ba431wed on 28.10.2016.
@@ -23,4 +22,3 @@ case class Square(row : Int, col : Char, piece: Piece) {
     this.piece
   }
 }
-
