@@ -14,11 +14,4 @@ case class Square(row : Int, col : Char, piece: Piece) {
     (this.row, this.col)
   }
 
-  /**
-    * gets the Piece on this Square.
-    * @return the Piece object
-    */
-  def getPiece(): Piece = {
-    this.piece
-  }
 }

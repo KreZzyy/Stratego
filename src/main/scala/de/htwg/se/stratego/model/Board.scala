@@ -3,7 +3,8 @@ package stratego
 /** Creates Data Object simulating a GameBoard
   * Created by ba431wed on 28.10.2016.
   */
-case class Board(squares: Array[Array[Square]]) {
+case class Board(size: Int) {
+  val squares = Array.ofDim[Square](size, size)
 
 
   override def toString(): String = {
