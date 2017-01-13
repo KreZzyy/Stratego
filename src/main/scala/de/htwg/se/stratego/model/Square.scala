@@ -14,4 +14,8 @@ case class Square(row : Int, col : Char, piece: Piece) {
     (this.row, this.col)
   }
 
+  def getPiece(): Piece = {
+    piece
+  }
+
 }

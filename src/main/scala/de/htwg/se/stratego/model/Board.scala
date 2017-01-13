@@ -6,6 +6,9 @@ package stratego
 case class Board(size: Int) {
   val squares = Array.ofDim[Square](size, size)
 
+  def getSquare(row: Int, col: Char): Square = {
+    squares(row)(col.toUpper - 65)
+  }
 
   override def toString(): String = {
     val sb = new StringBuilder()

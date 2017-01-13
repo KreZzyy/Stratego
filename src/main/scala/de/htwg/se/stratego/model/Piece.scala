@@ -7,7 +7,7 @@ package stratego
   * 10 is Marshal; 11 is Flag; -1 is none
   * Created by ba431wed on 28.10.2016.
   */
-case class Piece(rank: Int) {
+case class Piece(rank: Int, colour: String) {
   /**
     * Returns the rank.
     *
@@ -15,5 +15,9 @@ case class Piece(rank: Int) {
     */
   def getRank(): Int = {
     this.rank
+  }
+
+  def getColour(): String = {
+    this.colour
   }
 }
